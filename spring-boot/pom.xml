@@ -9,5 +9,8 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <description>Spring Boot Demo Projects</description>
-    
+
+    <modules>
+        <module>admin-server</module>
+    </modules>
 </project>

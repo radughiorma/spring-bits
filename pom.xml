@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.radug</groupId>
+    <artifactId>springbits</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <description>Spring demo projects</description>
+
+    <developers>
+        <developer>
+            <name>Ghiorma Radu</name>
+            <email>radu.ghiorma@yahoo.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>spring-boot</module>
+    </modules>
+
+    <scm>
+        <url>https://github.com/radughiorma/spring-bits</url>
+        <developerConnection>https://github.com/radughiorma/spring-bits.git</developerConnection>
+        <connection>https://github.com/radughiorma/spring-bits.git</connection>
+    </scm>
+</project>

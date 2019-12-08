@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v1
     - uses: ./.github/workflows/maven
     - name: Build the admin server Docker image
       run: docker build . --file ./spring-boot/admin-server/Dockerfile --tag org.radug.springbits/admin-server:$(date +%s)

@@ -10,7 +10,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: ./.github/workflows/maven
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
     - name: Build the admin server Docker image
       run: docker build . --file ./spring-boot/admin-server/Dockerfile --tag org.radug.springbits/admin-server:$(date +%s)
     - name: Build the admin client Docker image

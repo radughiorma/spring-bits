@@ -21,7 +21,6 @@
 
     <modules>
         <module>spring-boot</module>
-        <module>docker</module>
     </modules>
 
     <scm>

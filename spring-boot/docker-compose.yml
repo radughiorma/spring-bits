@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  admin-server:
+    image: org.radug.springbits/admin-server
+    ports:
+      - "8080:8080"
+    networks:
+      - springcloud
+
+  admin-client:
+    image: org.radug.springbits/admin-client
+    networks:
+      - springcloud
+    environment:
+      - "spring.boot.admin.client.url=http://admin-server:8080"
+    deploy:
+      replicas: 5
+
+networks:
+  springcloud:
+
